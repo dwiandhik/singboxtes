@@ -1,0 +1,815 @@
+{
+    "proxies": [
+        {
+            "name": "XL B1",
+            "server": "104.17.3.81",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B2",
+            "server": "ava.game.naver.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B3",
+            "server": "ava.game.naver.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "ava.game.naver.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "ava.game.naver.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B4",
+            "server": "ava.game.naver.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "ava.game.naver.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "ava.game.naver.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B5",
+            "server": "zoomcares.zoom.us",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "zoomcares.zoom.us.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B6",
+            "server": "zoomcares.zoom.us",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "zoomcares.zoom.us.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B7",
+            "server": "partner.zoom.us",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "partner.zoom.us.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B8",
+            "server": "partner.zoom.us",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "partner.zoom.us.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B9",
+            "server": "support.zoom.us",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "support.zoom.us.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "support.zoom.us.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B10",
+            "server": "support.zoom.us",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "support.zoom.us.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "support.zoom.us.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B11",
+            "server": "support.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B12",
+            "server": "img.email2.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B13",
+            "server": "nontontv.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B14",
+            "server": "quiz.staging.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B15",
+            "server": "img.email3.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B16",
+            "server": "quiz.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B17",
+            "server": "support.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B18",
+            "server": "img.email2.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B19",
+            "server": "nontontv.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B20",
+            "server": "quiz.staging.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B21",
+            "server": "img.email3.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B22",
+            "server": "quiz.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B23",
+            "server": "support.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "support.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "support.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B24",
+            "server": "img.email2.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "img.email2.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "img.email2.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B25",
+            "server": "nontontv.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "nontontv.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "nontontv.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B26",
+            "server": "quiz.staging.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "quiz.staging.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "quiz.staging.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B27",
+            "server": "img.email3.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "img.email3.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "img.email3.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B28",
+            "server": "quiz.vidio.com",
+            "port": 80,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": false,
+            "skip-cert-verify": true,
+            "servername": "quiz.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "quiz.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B29",
+            "server": "support.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "support.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "support.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B30",
+            "server": "img.email2.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "img.email2.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "img.email2.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B31",
+            "server": "nontontv.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "nontontv.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "nontontv.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B32",
+            "server": "quiz.staging.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "quiz.staging.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "quiz.staging.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B33",
+            "server": "img.email3.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "img.email3.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "img.email3.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        },
+        {
+            "name": "XL B34",
+            "server": "quiz.vidio.com",
+            "port": 443,
+            "type": "vmess",
+            "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+            "alterId": 0,
+            "cipher": "auto",
+            "tls": true,
+            "skip-cert-verify": true,
+            "servername": "quiz.vidio.com.sgx.premi.my.id",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/vmess",
+                "headers": {
+                    "Host": "quiz.vidio.com.sgx.premi.my.id"
+                }
+            },
+            "udp": true
+        }
+    ],
+    "proxy-groups": [
+        {
+            "name": "DW-CELLKOM",
+            "type": "select",
+            "proxies": [
+                "FALLBACK"
+            ]
+        },
+        {
+            "name": "DW",
+            "type": "select",
+            "proxies": [
+                "BEST-PING"
+            ]
+        },
+        {
+            "name": "CELLKOM",
+            "type": "select",
+            "proxies": [
+                "LOAD-BALANCE"
+            ]
+        },
+        {
+            "name": "BEST-PING",
+            "type": "url-test",
+            "url": "http://www.gstatic.com/generate_204",
+            "interval": 80,
+            "proxies": [
+                "XL B19",
+                "XL B1",
+                "XL B2",
+                "XL B3",
+                "XL B4",
+                "XL B5",
+                "XL B6",
+                "XL B7",
+                "XL B8",
+                "XL B9",
+                "XL B10",
+                "XL B11",
+                "XL B12",
+                "XL B13",
+                "XL B14",
+                "XL B15",
+                "XL B16",
+                "XL B17",
+                "XL B18",
+                "XL B20",
+                "XL B21",
+                "XL B22",
+                "XL B23",
+                "XL B24",
+                "XL B25",
+                "XL B26",
+                "XL B27",
+                "XL B28",
+                "XL B29",
+                "XL B30",
+                "XL B31",
+                "XL B32",
+                "XL B33",
+                "XL B34"
+            ]
+        },
+        {
+            "name": "FALLBACK",
+            "type": "fallback",
+            "url": "http://www.gstatic.com/generate_204",
+            "interval": 80,
+            "proxies": [
+                "LOAD-BALANCE-2"
+            ]
+        },
+        {
+            "name": "LOAD-BALANCE-2",
+            "type": "load-balance",
+            "strategy": "consistent-hashing",
+            "url": "http://www.gstatic.com/generate_204",
+            "interval": 80,
+            "proxies": [
+                "DW",
+                "CELLKOM"
+            ]
+        },
+        {
+            "name": "LOAD-BALANCE",
+            "type": "load-balance",
+            "strategy": "consistent-hashing",
+            "url": "http://www.gstatic.com/generate_204",
+            "interval": 80,
+            "proxies": [
+                "XL B19",
+                "XL B1",
+                "XL B2",
+                "XL B3",
+                "XL B4",
+                "XL B5",
+                "XL B6",
+                "XL B7",
+                "XL B8",
+                "XL B9",
+                "XL B10",
+                "XL B11",
+                "XL B12",
+                "XL B13",
+                "XL B14",
+                "XL B15",
+                "XL B16",
+                "XL B17",
+                "XL B18",
+                "XL B20",
+                "XL B21",
+                "XL B22",
+                "XL B23",
+                "XL B24",
+                "XL B25",
+                "XL B26",
+                "XL B27",
+                "XL B28",
+                "XL B29",
+                "XL B30",
+                "XL B31",
+                "XL B32",
+                "XL B33",
+                "XL B34"
+            ]
+        }
+    ],
+    "rules": [
+        "MATCH,DW-CELLKOM"
+    ]
+}
