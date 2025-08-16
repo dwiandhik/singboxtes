@@ -1,0 +1,25 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "remote": {
+    "url": "https://raw.githubusercontent.com/username/singbox-config/main/remote-singbox.json",
+    "download_interval": "1h",
+    "verify_tls": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "address": "1.1.1.1",
+        "detour": "direct"
+      }
+    ]
+  },
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "address": "1.1.1.1",
+        "detour": "direct"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "vmess",
+      "listen": "0.0.0.0",
+      "listen_port": 443,
+      "users": [
+        {
+          "uuid": "6d847397-1033-4891-a1fe-d05f41d0430b",
+          "alterId": 0,
+          "security": "auto"
+        }
+      ],
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "yourdomain.com"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "yourdomain.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "certificate_path": "/etc/ssl/certs/your-cert.crt",
+        "key_path": "/etc/ssl/private/your-cert.key"
+      },
+      "tag": "vmess-in"
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "geoip:private"
+        ],
+        "outbound": "block"
+      }
+    ]
+  }
+}
