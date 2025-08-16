@@ -123,7 +123,7 @@
     },
     {
       "type": "vmess",
-      "tag": "XL-B1",
+      "tag": "XL B1",
       "server": "104.17.3.81",
       "server_port": 80,
       "uuid": "dea1cbed-d3f0-4429-83b9-59f497a7fe3c",
