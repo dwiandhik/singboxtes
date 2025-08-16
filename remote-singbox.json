@@ -1,65 +1,168 @@
 {
-  "log": {
-    "level": "info",
-    "timestamp": true
-  },
   "dns": {
+    "independent_cache": true,
+    "rules": [
+      {
+        "action": "reject",
+        "network": [
+          "udp"
+        ],
+        "port": [
+          443
+        ],
+        "port_range": []
+      }
+    ],
     "servers": [
       {
-        "address": "1.1.1.1",
-        "detour": "direct"
+        "server": "1.1.1.1",
+        "domain_resolver": "dns-direct",
+        "type": "https",
+        "detour": "Auto",
+        "tag": "dns-remote"
+      },
+      {
+        "type": "udp",
+        "server": "112.215.198.248",
+        "tag": "dns-direct"
       }
     ]
   },
   "inbounds": [
     {
-      "type": "vmess",
-      "listen": "0.0.0.0",
-      "listen_port": 443,
-      "users": [
-        {
-          "uuid": "6d847397-1033-4891-a1fe-d05f41d0430b",
-          "alterId": 0,
-          "security": "auto"
-        }
+      "endpoint_independent_nat": true,
+      "address": [
+        "172.19.0.1/28"
       ],
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "yourdomain.com"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "yourdomain.com",
-        "alpn": [
-          "http/1.1"
-        ],
-        "certificate_path": "/etc/ssl/certs/your-cert.crt",
-        "key_path": "/etc/ssl/private/your-cert.key"
-      },
-      "tag": "vmess-in"
+      "mtu": 9000,
+      "sniff": true,
+      "auto_route": true,
+      "auto_redirect": false,
+      "sniff_override_destination": false,
+      "stack": "mixed",
+      "tag": "tun-in",
+      "type": "tun"
     }
   ],
+  "log": {
+    "level": "panic"
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "clash.db",
+      "store_fakeip": false
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "dashboard",
+      "external_ui_download_url": "",
+      "external_ui_download_detour": "Auto",
+      "default_mode": "Rule"
+    }
+  },
   "outbounds": [
     {
-      "type": "direct",
-      "tag": "direct"
+      "type": "urltest",
+      "tag": "Auto",
+      "outbounds": [
+        "proxy-1",
+        "proxy-2"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "30s",
+      "tolerance": 5
     },
     {
-      "type": "block",
-      "tag": "block"
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "nontontv.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "7c9ab8a9-cad2-4a15-a70c-2935bf35c90f",
+      "type": "vmess",
+      "tag": "proxy-1"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "nontontv.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": false,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "7c9ab8a9-cad2-4a15-a70c-2935bf35c90f",
+      "type": "vmess",
+      "tag": "proxy-2"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
     }
   ],
   "route": {
+    "auto_detect_interface": true,
+    "final": "Auto",
+    "default_domain_resolver": {
+      "server": "dns-direct",
+      "strategy": "ipv4_only"
+    },
+    "rule_set": [],
     "rules": [
       {
-        "type": "field",
-        "ip": [
-          "geoip:private"
+        "action": "hijack-dns",
+        "port": [
+          53
+        ]
+      },
+      {
+        "action": "hijack-dns",
+        "protocol": [
+          "dns"
+        ]
+      },
+      {
+        "action": "reject",
+        "network": [
+          "udp"
         ],
-        "outbound": "block"
+        "port": [
+          443
+        ],
+        "port_range": []
+      },
+      {
+        "action": "reject",
+        "ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ],
+        "source_ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ]
       }
     ]
   }
