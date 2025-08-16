@@ -71,7 +71,38 @@
         "XL-B1",
         "XL-B2",
         "XL-B3",
-        "XL-B4" 
+        "XL-B4",
+        "XL-B5",
+        "XL-B6",
+        "XL-B7",
+        "XL-B8",
+        "XL-B9",
+        "XL-B10",
+        "XL-B11",
+        "XL-B12",
+        "XL-B13",
+        "XL-B14",
+        "XL-B15",
+        "XL-B16",
+        "XL-B17",
+        "XL-B18",
+        "XL-B19",
+        "XL-B20",
+        "XL-B21",
+        "XL-B22",
+        "XL-B23",
+        "XL-B24",
+        "XL-B25",
+        "XL-B26",
+        "XL-B27",
+        "XL-B28",
+        "XL-B29",
+        "XL-B30",
+        "XL-B31",
+        "XL-B32",
+        "XL-B33",
+        "XL-B34"
+
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "30s",
@@ -122,88 +153,752 @@
       "tag": "proxy-2"
     },
     {
-      "type": "vmess",
-      "tag": "XL B1",
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
       "server": "104.17.3.81",
       "server_port": 80,
-      "uuid": "dea1cbed-d3f0-4429-83b9-59f497a7fe3c",
-      "alter_id": 0,
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess",
-        "headers": {
-          "Host": "sgx.premi.my.id"
-        }
-      },
       "tls": {
         "enabled": false,
-        "server_name": "sgx.premi.my.id",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "XL-B2",
-      "server": "ava.game.naver.com",
-      "server_port": 80,
-      "uuid": "dea1cbed-d3f0-4429-83b9-59f497a7fe3c",
-      "alter_id": 0,
-      "security": "auto",
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
       "transport": {
-        "type": "ws",
-        "path": "/vmess",
         "headers": {
           "Host": "sgx.premi.my.id"
-        }
+        },
+        "path": "/vmess",
+        "type": "ws"
       },
-      "tls": {
-        "enabled": false,
-        "server_name": "sgx.premi.my.id",
-        "insecure": true
-      }
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B1"
     },
     {
-      "type": "vmess",
-      "tag": "XL-B3",
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
       "server": "ava.game.naver.com",
       "server_port": 80,
-      "uuid": "dea1cbed-d3f0-4429-83b9-59f497a7fe3c",
-      "alter_id": 0,
-      "security": "auto",
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
       "transport": {
-        "type": "ws",
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
         "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B2"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "ava.game.naver.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "ava.game.naver.com.sgx.premi.my.id"
+      },
+      "transport": {
         "headers": {
           "Host": "ava.game.naver.com.sgx.premi.my.id"
-        }
+        },
+        "path": "/vmess",
+        "type": "ws"
       },
-      "tls": {
-        "enabled": false,
-        "server_name": "ava.game.naver.com.sgx.premi.my.id",
-        "insecure": true
-      }
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B3"
     },
     {
-      "type": "vmess",
-      "tag": "XL-B4",
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
       "server": "ava.game.naver.com",
       "server_port": 443,
-      "uuid": "dea1cbed-d3f0-4429-83b9-59f497a7fe3c",
-      "alter_id": 0,
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess",
-        "headers": {
-          "Host": "ava.game.naver.com.sgx.premi.my.id"
-        }
-      },
       "tls": {
         "enabled": true,
-        "server_name": "ava.game.naver.com.sgx.premi.my.id",
-        "insecure": true
-      }
+        "insecure": true,
+        "server_name": "ava.game.naver.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ava.game.naver.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B4"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "zoomcares.zoom.us",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "zoomcares.zoom.us.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B5"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "zoomcares.zoom.us",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "zoomcares.zoom.us.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B6"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "partner.zoom.us",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "partner.zoom.us.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B7"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "partner.zoom.us",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "partner.zoom.us.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B8"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "support.zoom.us",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "support.zoom.us.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "support.zoom.us.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B9"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "support.zoom.us",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "support.zoom.us.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "support.zoom.us.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B10"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "support.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B11"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "img.email2.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B12"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "nontontv.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B13"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "quiz.staging.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B14"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "img.email3.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B15"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "quiz.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B16"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "support.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B17"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "img.email2.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B18"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "nontontv.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B19"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "quiz.staging.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B20"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "img.email3.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B21"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "quiz.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B22"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "support.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "support.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "support.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B23"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "img.email2.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "img.email2.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "img.email2.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B24"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "nontontv.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "nontontv.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "nontontv.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B25"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "quiz.staging.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "quiz.staging.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "quiz.staging.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B26"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "img.email3.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "img.email3.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "img.email3.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B27"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "quiz.vidio.com",
+      "server_port": 80,
+      "tls": {
+        "enabled": false,
+        "insecure": true,
+        "server_name": "quiz.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "quiz.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B28"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "support.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "support.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "support.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B29"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "img.email2.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "img.email2.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "img.email2.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B30"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "nontontv.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "nontontv.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "nontontv.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B31"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "quiz.staging.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "quiz.staging.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "quiz.staging.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B32"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "img.email3.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "img.email3.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "img.email3.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B33"
+    },
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "quiz.vidio.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "quiz.vidio.com.sgx.premi.my.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "quiz.vidio.com.sgx.premi.my.id"
+        },
+        "path": "/vmess",
+        "type": "ws"
+      },
+      "uuid": "b10f5aaa-f036-43c3-af34-224a700a40e7",
+      "type": "vmess",
+      "tag": "XL-B34"
     },
     {
       "tag": "direct",
